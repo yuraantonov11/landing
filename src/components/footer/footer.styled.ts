@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components'
 
 const StyledFooter = styled.footer`
@@ -7,10 +6,10 @@ const StyledFooter = styled.footer`
 
 display: flex;
 align-items: center;
-justify-content: space-around;
-background-color: #607d8b;
+justify-content: space-between;
+background-color: #303435;
 color: #fff;
-padding: 20px 0;
+padding: 20px;
 
 ul {
     display: flex;
@@ -25,6 +24,9 @@ p {
     font-size: 14px;
     opacity: 0.6;
     align-self: center;
+}
+.logo{
+  height: 4rem;
 }
 
 @media screen and (max-width: 1100px) {
@@ -44,8 +46,4 @@ p {
 }
 `;
 
-const Footer = () => <StyledFooter>
-   footer
-</StyledFooter>;
-
-export default Footer;
+export default StyledFooter;

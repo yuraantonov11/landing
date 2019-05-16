@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import bg from '../images/bg01.png';
 import img from '../images/moneto-full.svg';
+import {useTranslation} from 'react-i18next';
 
 const StyledFirstSection = styled.section`
     width: 100%;
@@ -14,9 +15,13 @@ const StyledFirstSection = styled.section`
     }
 `;
 
-const FirstSection = () => <StyledFirstSection>
-    <img src={img} alt="logo"/>
-    <h2>texxt</h2>
-</StyledFirstSection>;
+const FirstSection = () => {
+    const { t } = useTranslation();
+    return <StyledFirstSection>
+        <img src={img} alt="logo"/>
+        <h2>{t('headline')}</h2>
+    </StyledFirstSection>
+};
+
 
 export default FirstSection;
