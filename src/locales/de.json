@@ -1,5 +1,8 @@
 {
   "loginBtn": "Login",
   "registerBtn": "Account Erstellen",
-  "headline": "Herzlich Willkommen auf moneto. Die Fuhrende schweizer Platform fur alle finanzillen Themen."
+  "firstSectionHeadline": "Herzlich Willkommen auf moneto. Die Fuhrende schweizer Platform fur alle finanzillen Themen.",
+  "secondSectionHeadline": "Wovon lebe ich nach dem Arbeitsleben?",
+  "secondSectionTitle": "Nutzen Sie kostenfrei unsere erste Applikation \"Vorsorgeplanung\":",
+  "fastRegister": "Schnell-Check"
 }
