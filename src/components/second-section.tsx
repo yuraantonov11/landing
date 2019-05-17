@@ -12,10 +12,11 @@ const StyledSecondSection = styled.section`
   .wrapper{
     flex-direction: column;
       .text-wrapper{
+        margin-bottom: 25px;
         h2{
           margin: 1rem 0;
         }
-        h3{
+        span{
           margin: 1rem 0;
         }
       }
@@ -35,16 +36,15 @@ const SecondSection = () => {
         <div className="wrapper">
             <div className="text-wrapper">
                 <h2>{t('secondSectionHeadline')}</h2>
-                <h3>{t('secondSectionTitle')}</h3>
+                <span>{t('secondSectionTitle')}</span>
             </div>
             <div className="programs-list">
                 <ProgramComponent />
-                <ProgramComponent className="active gradient" />
+                <ProgramComponent className="highlighted gradient" />
             </div>
         </div>
 
-
     </StyledSecondSection>;
-}
+};
 
 export default SecondSection;

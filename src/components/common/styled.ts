@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { Link } from 'react-router-dom'
 import colors from './colors';
 
 const Button = styled.button`
@@ -38,12 +39,27 @@ const ProgramButton = styled(Button)`
   color: ${colors.white0};
   border: none;
 `;
+const gradientMixin = css`
+  background-image: linear-gradient(to top right, ${colors.green1}, ${colors.blue1});
+`;
+const StyledLink = styled(Link)`
+    color: ${colors.grey1};
+    display: block;
+    margin: 0 1rem;
+    text-transform: lowercase;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }`;
 
 export {
     Button,
     ButtonPrimary,
     ButtonSecondary,
     LangButton,
-    ProgramButton
+    ProgramButton,
+    StyledLink,
+    gradientMixin
 };
 

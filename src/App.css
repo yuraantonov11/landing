@@ -6,8 +6,13 @@
     box-sizing: border-box;
 }
 
-html {
+body {
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+}
+
+title{
+    font-size: 24px;
 }
 
 nav {
@@ -66,8 +71,20 @@ section p {
     margin-bottom: 30px;
     text-align: center;
 }
+.flex{
+    display: flex;
+}
 
 @media screen and (max-width: 800px) {
+    body{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    title{
+        font-size: 16px;
+    }
     section {
         padding: 50px 20px;
     }

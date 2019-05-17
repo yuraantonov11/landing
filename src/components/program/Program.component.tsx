@@ -6,7 +6,6 @@ import { ProgramButton } from '../common/styled';
 
 const Header = (props: any) => {
     const { t } = useTranslation();
-    console.log(props);
 
     return <StyledProgram className={props.className}>
         <span className="time">2 min</span>
