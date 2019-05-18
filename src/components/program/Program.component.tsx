@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { ProgramButton } from '../common/styled';
 
 
-const Header = (props: any) => {
+const ProgramComponent = (props: any) => {
     const { t } = useTranslation();
 
     return <StyledProgram className={props.className}>
@@ -15,4 +15,4 @@ const Header = (props: any) => {
     </StyledProgram>;
 };
 
-export default Header;
+export default ProgramComponent;
