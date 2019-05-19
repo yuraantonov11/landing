@@ -4,7 +4,6 @@
   "firstSectionHeadline": "Herzlich Willkommen auf moneto. Die Fuhrende schweizer Platform fur alle finanzillen Themen.",
   "secondSectionHeadline": "Wovon lebe ich nach dem Arbeitsleben?",
   "secondSectionTitle": "Nutzen Sie kostenfrei unsere erste Applikation \"Vorsorgeplanung\":",
-  "fastRegister": "Schnell-Check",
   "videoButtonText": "Erklär-Video",
   "videoButtonQuestion": "Vas ist Moneto?",
   "navigation": {
@@ -12,5 +11,32 @@
     "partner": "partner",
     "contact": "kontakt",
     "imprint": "impressum"
+  },
+  "benefits": {
+    "first": {
+      "title": "Daten sind sicher!",
+      "content": "Im Gegensatz zu vielen anderen Plattformen betreibt Moneto <b>keinen Datenhandell</b> Sie haben jederzeit die Kontrolle über Ihre Daten."
+    },
+    "second": {
+      "title": "Weitere Applikationen und Dienstleistyngen in Entwicklung",
+      "content": "Sie werden mit Ihrem Moneto-Account in naher Zukunft von weiteren Diensteistungen profitieren!"
+    },
+    "third": {
+      "title": "Einfache Bedienung",
+      "content": "Mit Moneto werden finanzielle Themen einfach und verständlich dargestellt."
+    }
+  },
+  "programs": {
+    "first": {
+      "title": "Schnell-Check",
+      "content": "Finden Sie in kurzer Zeit und one Registrierung heraus, wie Sie bei Ihrer Pensionierung finanziell dastehen könnten",
+      "button": "Los Geht's"
+    },
+    "second": {
+      "title": "exakte Berechnung",
+      "content": "Sie wollen es genau wissen? Mit der kostenfreien Registrierung erhalten Sie einen exakten Überblick über Ihre Vorsorge Situation",
+      "button": "Account Erstellen"
+    }
   }
+
 }

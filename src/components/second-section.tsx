@@ -40,7 +40,7 @@ const SecondSection = () => {
             </div>
             <div className="programs-list">
                 <ProgramComponent />
-                <ProgramComponent className="highlighted gradient" />
+                <ProgramComponent second className="highlighted gradient" />
             </div>
         </div>
 

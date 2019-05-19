@@ -4,8 +4,8 @@ import colors from './colors';
 
 const Button = styled.button`
   font: inherit;
-  padding: 0.5em 1em;
-  border-radius: 2rem;
+  padding: 5px 45px;
+  border-radius: 5rem;
   margin-right: 0.5em;
   cursor: pointer;
   text-transform: uppercase;
@@ -21,6 +21,7 @@ const ButtonSecondary = styled(Button)`
   background-color: ${colors.white1};
   color: ${colors.grey0};
   border: 2px solid ${colors.white1};
+  padding: 5px 20px;
 `;
 
 const LangButton = styled.a`
@@ -38,6 +39,8 @@ const ProgramButton = styled(Button)`
   background-color: ${colors.blue1};
   color: ${colors.white0};
   border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 const gradientMixin = css`
   background-image: linear-gradient(to top right, ${colors.green1}, ${colors.blue1});

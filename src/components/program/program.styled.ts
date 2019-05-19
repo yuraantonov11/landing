@@ -8,8 +8,11 @@ const StyledHeader = styled.div`
     background-color: ${colors.white2};
     border-radius: 5px;
     border: 1px solid ${colors.white0};
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     .time{
-      align-self: end;
+      align-self: flex-end;
     }
     &.highlighted{
       background-color: ${colors.white0};
@@ -20,6 +23,11 @@ const StyledHeader = styled.div`
     title{
       color: ${colors.blue1};
       display: block;
+    }
+    .content{
+      color: ${colors.black1};
+      text-align: left;
+      padding: 0;
     }
   
 

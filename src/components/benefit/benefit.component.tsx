@@ -1,17 +1,25 @@
 import React from 'react';
 import StyledBenefit from './benefit.styled';
+import {Trans} from 'react-i18next';
 interface BenefitProps {
     title: string,
-    content: string
+    content: string,
+    icon: string
 }
 
 const Benefit: React.FC<BenefitProps> = (props) => {
 
     return <StyledBenefit>
-        <i className="icon" />
+        <i className={'icon ' + props.icon} />
         <div className="text">
-            <title>{props.title}</title>
-            <span>{props.content}</span>
+            <title>
+                    {props.title}
+                </title>
+            <span>
+                <Trans>
+                {props.content}
+                </Trans>
+            </span>
         </div>
     </StyledBenefit>;
 };

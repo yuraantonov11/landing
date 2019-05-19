@@ -7,7 +7,7 @@ import {useTranslation} from 'react-i18next';
 const StyledThirdSection = styled.section`
   .wrapper{
     flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 0;
   }
 `;
 
@@ -16,16 +16,19 @@ const ThirdSection = () => {
     return <StyledThirdSection>
         <div className="wrapper">
             <BenefitComponent
-                title="Daten sind sicher!"
-                content={t('-||-')}
+                icon="lock"
+                title={t('benefits.first.title')}
+                content={t('benefits.first.content')}
             />
             <BenefitComponent
-                title="Weitere Applikationen und Dienstleistyngen in Entwicklung"
-                content={t('-||-')}
+                icon="squares"
+                title={t('benefits.second.title')}
+                content={t('benefits.second.content')}
             />
             <BenefitComponent
-                title="Einfache Bedienung"
-                content="Mit Moneto werden finanzielle Themen einfach und verständlich dargestellt."
+                icon="mobile"
+                title={t('benefits.second.title')}
+                content={t('benefits.second.content')}
             />
         </div>
 
