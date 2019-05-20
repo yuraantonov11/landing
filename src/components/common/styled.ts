@@ -14,6 +14,7 @@ const Button = styled.button`
   margin-right: 0.5em;
   cursor: pointer;
   text-transform: uppercase;
+  outline: none;
 `;
 
 const ButtonPrimary = styled(Button)`
@@ -100,7 +101,7 @@ export const StyledFirstSection = styled.section`
     background-position-x: 50%;
     color: ${colors.white1};
     align-items: flex-start;
-    .text-wrap{
+    .text-wrapper{
       margin-left: 1.6rem;
       color: ${colors.white0};
     }
@@ -122,9 +123,11 @@ export const StyledSecondSection = styled.section`
     .text-wrapper{
       margin-bottom: 25px;
       h2{
+        font-weight: 400;
         margin: 1rem 0;
       }
       span{
+        font-weight: 400;
         margin: 1rem 0;
       }
     }

@@ -45,7 +45,7 @@ const StyledBenefit = styled.div`
             content: "\\e970";
           }
         }
-        &.mobile{
+        &.phone{
           &::before{
             content: "\\e9ca";
           }

@@ -14,7 +14,7 @@ const Landing = () => {
             <div className="wrapper">
                 <img src={img} alt="logo" className="desktop"/>
                 <img src={imgLabel} alt="logo" className="mobile"/>
-                <div className="text-wrap">
+                <div className="text-wrapper">
                     <h2>{t('firstSectionHeadline')}</h2>
                     <MainButton className="flex">
                         <div className="play_circle">
@@ -54,7 +54,7 @@ const Landing = () => {
                     content={t('benefits.second.content')}
                 />
                 <BenefitComponent
-                    icon="mobile"
+                    icon="phone"
                     title={t('benefits.second.title')}
                     content={t('benefits.second.content')}
                 />
