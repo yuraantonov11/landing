@@ -11,8 +11,24 @@ const StyledBenefit = styled.div`
       display: block;
       color: ${colors.blue1};
     }
+    .text{
+       position: relative;
+       width: 100%;
+       padding: 50px 0;
+       &::after{
+          width: 30%;
+          border: 1px solid ${colors.white1};
+          content: '';
+          bottom: 0;
+          left: 0;
+          position: absolute;
+       }
+    }
+   &:last-child .text::after{
+      width: 0;
+   }
     .icon{
-      padding: 1rem;
+      padding: 2rem;
         &::before{
           color: ${colors.blue1};
           font-style: normal;

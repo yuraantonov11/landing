@@ -26,7 +26,6 @@ a:hover {
     opacity: 1;
 }
 
-
 section {
     display: flex;
     flex-direction: column;
@@ -43,14 +42,14 @@ h2{
 
 .App {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1.1fr .9fr .9fr 1.1fr;
     grid-template-rows: auto 358px auto;
 }
 section,
 header,
 footer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1.1fr .9fr .9fr 1.1fr;
     grid-column: 1 / span 5;
 }
 section .wrapper{
@@ -77,6 +76,12 @@ section p {
 .flex{
     display: flex;
 }
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
 
 @media screen and (max-width: 800px) {
     body{
@@ -91,4 +96,24 @@ section p {
     section {
         padding: 50px 20px;
     }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .App {
+        grid-template-columns: 0 1fr 1fr 0;
+        grid-column: 1;
+    }
+    section{
+        grid-template-columns: 0 1fr 1fr 0;
+        padding: 1rem;
+        align-content: flex-start;
+    }
+    section .wrapper{
+        flex-direction: column;
+        grid-column: 2 / span 2;
+    }
+
 }

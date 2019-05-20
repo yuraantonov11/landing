@@ -11,15 +11,8 @@ const StyledHeader = styled.header`
       display: flex;
     }
 
-@keyframes fadein {
-    100% {
-        opacity: 1;
-    }
-}
-
 nav {
     display: flex;
-    margin-right: -15px;
     .lang-bar {
         display: flex;
         align-items: center;
@@ -31,8 +24,8 @@ nav li {
 }
 
 @media screen and (max-width: 800px) {
-    padding: 20px 50px;
-    flex-direction: column;
+    padding: 15px;
+    flex-direction: row;
 
     img {
         margin-bottom: 15px;
@@ -40,6 +33,9 @@ nav li {
 
     nav {
         margin-right: 0;
+        .lang-bar{
+          display: none;
+        }
     }
 }
 `;

@@ -6,6 +6,7 @@
   "secondSectionTitle": "Nutzen Sie kostenfrei unsere erste Applikation \"Vorsorgeplanung\":",
   "videoButtonText": "Erklär-Video",
   "videoButtonQuestion": "Vas ist Moneto?",
+  "loading": "Wird geladen",
   "navigation": {
     "support": "support",
     "partner": "partner",
@@ -30,12 +31,14 @@
     "first": {
       "title": "Schnell-Check",
       "content": "Finden Sie in kurzer Zeit und one Registrierung heraus, wie Sie bei Ihrer Pensionierung finanziell dastehen könnten",
-      "button": "Los Geht's"
+      "button": "Los Geht's",
+      "time": "2 min"
     },
     "second": {
       "title": "exakte Berechnung",
       "content": "Sie wollen es genau wissen? Mit der kostenfreien Registrierung erhalten Sie einen exakten Überblick über Ihre Vorsorge Situation",
-      "button": "Account Erstellen"
+      "button": "Account Erstellen",
+      "time": "10 min +"
     }
   }
 

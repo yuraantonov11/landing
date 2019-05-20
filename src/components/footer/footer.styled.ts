@@ -37,21 +37,10 @@ nav{
   height: 4rem;
 }
 
-@media screen and (max-width: 1100px) {
-    footer {
-        flex-direction: column;
-    }
-
-    footer p {
-        text-align: center;
-        margin-bottom: 20px;
-        padding: 10px 20px;
-    }
-
-    footer ul li {
-        margin: 0 8px;
-    }
+@media screen and (max-width: 800px) {
+  display: none;
 }
 `;
+
 
 export default StyledFooter;

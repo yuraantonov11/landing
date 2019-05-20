@@ -23,9 +23,12 @@ const Header = () => {
                     </LangButton>
                 )}
             </div>
-            <div className="user">
+            <div className="user desktop">
                 <ButtonPrimary>{t('loginBtn')}</ButtonPrimary>
                 <ButtonSecondary>{t('registerBtn')}</ButtonSecondary>
+            </div>
+            <div className="user mobile">
+                <ButtonSecondary>{t('loginBtn') + '/' + t('registerBtn')}</ButtonSecondary>
             </div>
         </nav>
     </StyledHeader>;

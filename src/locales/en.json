@@ -1,4 +1,5 @@
 {
   "loginBtn": "Login",
-  "registerBtn": "Sign up"
+  "registerBtn": "Sign up",
+  "loading": "Loading"
 }

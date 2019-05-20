@@ -4,7 +4,6 @@ import {StyledLink} from '../common/styled';
 import img from '../../images/moneto-full.svg';
 import {useTranslation} from 'react-i18next';
 
-
 const FooterComponent = () => {
    const { t } = useTranslation();
 

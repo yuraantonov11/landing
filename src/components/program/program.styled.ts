@@ -13,6 +13,9 @@ const StyledHeader = styled.div`
     align-items: flex-start;
     .time{
       align-self: flex-end;
+      &::before{
+        content: "\\f2f2";
+      }
     }
     &.highlighted{
       background-color: ${colors.white0};
