@@ -20,13 +20,13 @@ const Button = styled.button`
 const ButtonPrimary = styled(Button)`
   background-color: ${colors.grey0};
   color: ${colors.white1};
-  border: 2px solid ${colors.white1};
+  border: 1px solid ${colors.white1};
 `;
 
 const ButtonSecondary = styled(Button)`
   background-color: ${colors.white1};
   color: ${colors.grey0};
-  border: 2px solid ${colors.white1};
+  border: 1px solid ${colors.white1};
   padding: 5px 20px;
 `;
 
@@ -137,6 +137,7 @@ export const StyledSecondSection = styled.section`
       column-gap: 15px;
     }
     @media screen and (max-width: 800px) {
+      padding: 0;
       .programs-list{
         grid-template-columns: repeat(1, 1fr);
         column-gap: 0;

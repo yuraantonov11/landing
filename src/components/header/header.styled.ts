@@ -27,10 +27,6 @@ nav li {
     padding: 15px;
     flex-direction: row;
 
-    img {
-        margin-bottom: 15px;
-    }
-
     nav {
         margin-right: 0;
         .lang-bar{

@@ -4,7 +4,7 @@ import {gradientMixin} from '../common/styled';
 
 
 const StyledHeader = styled.div`
-    padding: 20px 50px;
+    padding: 20px 40px;
     background-color: ${colors.white2};
     border-radius: 5px;
     border: 1px solid ${colors.white0};

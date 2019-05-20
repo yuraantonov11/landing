@@ -28,7 +28,7 @@ const Header = () => {
                 <ButtonSecondary>{t('registerBtn')}</ButtonSecondary>
             </div>
             <div className="user mobile">
-                <ButtonSecondary>{t('loginBtn') + '/' + t('registerBtn')}</ButtonSecondary>
+                <ButtonPrimary>{t('loginBtn') + '/' + t('registerBtn')}</ButtonPrimary>
             </div>
         </nav>
     </StyledHeader>;

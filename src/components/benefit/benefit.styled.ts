@@ -52,8 +52,6 @@ const StyledBenefit = styled.div`
         }    }
 
 @media screen and (max-width: 800px) {
-    padding: 20px 50px;
-    flex-direction: column;
 
     img {
         margin-bottom: 15px;
