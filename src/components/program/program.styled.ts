@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import colors from '../common/colors';
 import {gradientMixin} from '../common/styled';
+import {device} from '../common/device';
 
 
 const StyledHeader = styled.div`
@@ -11,12 +12,6 @@ const StyledHeader = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    .time{
-      align-self: flex-end;
-      &::before{
-        content: "\\f2f2";
-      }
-    }
     &.highlighted{
       background-color: ${colors.white0};
       button{
@@ -34,7 +29,7 @@ const StyledHeader = styled.div`
     }
   
 
-@media screen and (max-width: 800px) {
+@media ${device.tablet} {
     padding: 20px 50px;
     flex-direction: column;
 

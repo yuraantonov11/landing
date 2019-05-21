@@ -40,39 +40,6 @@ h2{
     font-size: 36px;
 }
 
-.App {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr .9fr 1.1fr;
-    grid-template-rows: auto 358px auto;
-}
-section,
-header,
-footer {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr .9fr 1.1fr;
-    grid-column: 1 / span 5;
-}
-section .wrapper{
-    grid-column: 2/4;
-    display: flex;
-    align-self: center;
-}
-
-
-section h3.title {
-    text-transform: capitalize;
-    font: bold 32px "Open Sans", sans-serif;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-section p {
-    max-width: 775px;
-    line-height: 2;
-    padding: 0 20px;
-    margin-bottom: 30px;
-    text-align: center;
-}
 .flex{
     display: flex;
 }
@@ -83,7 +50,7 @@ section p {
     display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     body{
         font-size: 14px;
     }
@@ -101,19 +68,6 @@ section p {
     }
     .mobile{
         display: block;
-    }
-    .App {
-        grid-template-columns: 0 1fr 1fr 0;
-        grid-column: 1;
-    }
-    section{
-        grid-template-columns: 0 1fr 1fr 0;
-        padding: 1rem;
-        align-content: flex-start;
-    }
-    section .wrapper{
-        flex-direction: column;
-        grid-column: 2 / span 2;
     }
 
 }

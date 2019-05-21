@@ -1,6 +1,7 @@
 import React from 'react';
 import StyledBenefit from './benefit.styled';
 import {Trans} from 'react-i18next';
+import {Icon} from '../common/styled';
 type Props = {
     title: string,
     content: string,
@@ -10,7 +11,7 @@ type Props = {
 const Benefit: React.FC<Props> = (props) => {
 
     return <StyledBenefit>
-        <i className={'icon ' + props.icon} />
+        <Icon className={props.icon} />
         <div className="text">
             <title>
                     {props.title}

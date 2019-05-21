@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {device} from '../common/device';
 
 const StyledHeader = styled.header`
     display: flex;
@@ -7,6 +8,7 @@ const StyledHeader = styled.header`
     padding: 15px;
     color: white;
     background-color: #303435;
+    grid-area: header;
     nav{
       display: flex;
     }
@@ -23,7 +25,7 @@ nav li {
     margin: 0 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media ${device.tablet} {
     padding: 15px;
     flex-direction: row;
 

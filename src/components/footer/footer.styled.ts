@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {device} from '../common/device';
 
 const StyledFooter = styled.footer`
 
@@ -10,6 +11,8 @@ justify-content: space-between;
 background-color: #303435;
 color: #fff;
 padding: 2rem;
+grid-area: footer;
+
 
 ul {
     display: flex;
@@ -37,8 +40,19 @@ nav{
   height: 4rem;
 }
 
-@media screen and (max-width: 800px) {
-  display: none;
+@media ${device.tablet} {
+  flex-direction: column;
+  align-items: center;
+}
+@media ${device.tablet} {
+padding-bottom: 0;
+  nav{
+    margin: 0;
+    justify-content: space-between;
+    a{
+      margin: 1rem auto;
+    }
+  }
 }
 `;
 

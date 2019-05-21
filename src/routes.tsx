@@ -10,6 +10,7 @@ import {createBrowserHistory} from "history";
 import Landing from './components/landing';
 import Header from './components/header';
 import Footer from './components/footer';
+import {MainComponent} from './components/common/styled';
 import {useTranslation} from 'react-i18next';
 
 export const history = createBrowserHistory();
@@ -42,11 +43,11 @@ type Props = {
     children: ReactChild
 }
 const MainLayout: React.FC<Props> = props => (
-    <main className="App">
+    <MainComponent>
         <Header />
         {props.children}
         <Footer />
-    </main>
+    </MainComponent>
 );
 
 function Routes() {

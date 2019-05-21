@@ -1,7 +1,7 @@
 import React from 'react';
 import StyledProgram from './program.styled';
 import { useTranslation } from "react-i18next";
-import { ProgramButton } from '../common/styled';
+import {Icon, ProgramButton} from '../common/styled';
 
 type Props = {
     className?: string;
@@ -13,7 +13,7 @@ const ProgramComponent = (props: Props) => {
     console.log(programType);
 
     return <StyledProgram className={props.className}>
-        <span className="time">{t(`programs.${programType}.time`)}</span>
+        <Icon className="clock">{t(`programs.${programType}.time`)}</Icon>
         <title>{t(`programs.${programType}.title`)}:</title>
         <p className="content">{t(`programs.${programType}.content`)}</p>
         <ProgramButton>{t(`programs.${programType}.button`)}</ProgramButton>

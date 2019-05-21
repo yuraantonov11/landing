@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import colors from '../common/colors';
+import {device} from '../common/device';
 
 
 const StyledBenefit = styled.div`
@@ -27,31 +28,8 @@ const StyledBenefit = styled.div`
    &:last-child .text::after{
       width: 0;
    }
-    .icon{
-      padding: 2rem;
-        &::before{
-          color: ${colors.blue1};
-          font-style: normal;
-          font-size: 50px;
-          font-family: "Leinero", serif;
-        }
-        &.lock{
-          &::before{
-            content: "\\e9ef";
-          }
-        }
-        &.squares{
-          &::before{
-            content: "\\e970";
-          }
-        }
-        &.phone{
-          &::before{
-            content: "\\e9ca";
-          }
-        }    }
 
-@media screen and (max-width: 800px) {
+@media ${device.tablet} {
 
     img {
         margin-bottom: 15px;
