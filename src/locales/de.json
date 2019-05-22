@@ -30,13 +30,13 @@
   "programs": {
     "first": {
       "title": "Schnell-Check",
-      "content": "Finden Sie in kurzer Zeit und one Registrierung heraus, wie Sie bei Ihrer Pensionierung finanziell dastehen könnten",
+      "content": "Finden Sie in kurzer Zeit und <b>onhe Registrierung</b> heraus, wie Sie bei Ihrer Pensionierung finanziell dastehen könnten",
       "button": "Los Geht's",
       "time": "2 min"
     },
     "second": {
       "title": "exakte Berechnung",
-      "content": "Sie wollen es genau wissen? Mit der kostenfreien Registrierung erhalten Sie einen exakten Überblick über Ihre Vorsorge Situation",
+      "content": "Sie wollen es genau wissen? Mit der <b>kostenfreien Registrierung</b> erhalten Sie einen exakten Überblick über Ihre Vorsorge Situation",
       "button": "Account Erstellen",
       "time": "10 min +"
     }

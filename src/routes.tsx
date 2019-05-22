@@ -9,9 +9,10 @@ import {
 import {createBrowserHistory} from "history";
 import Landing from './components/landing';
 import Header from './components/header';
-import Footer from './components/footer';
 import {MainComponent} from './components/common/styled';
 import {useTranslation} from 'react-i18next';
+import {NotFoundPage} from './pages/notFound/NotFound.page';
+import {RegisterPage} from './pages/register/register.page';
 
 export const history = createBrowserHistory();
 
@@ -46,7 +47,6 @@ const MainLayout: React.FC<Props> = props => (
     <MainComponent>
         <Header />
         {props.children}
-        <Footer />
     </MainComponent>
 );
 
@@ -54,15 +54,22 @@ function Routes() {
     return (<Router history = {history}>
         <Switch>
             <RouteWithLayout
-            exact
-            path = "/"
-            layout = {MainLayout}
-            component = {Landing}
+                exact
+                path = "/"
+                layout = {MainLayout}
+                component = {Landing}
             />
-            {/*<Route*/}
-            {/*    exact*/}
-            {/*    component = {//NotFoundPage}*/}
-            {/*    />*/}
+            <RouteWithLayout
+                exact
+                path = "/register"
+                layout = {MainLayout}
+                component = {RegisterPage}
+            />
+            <RouteWithLayout
+                exact
+                layout = {MainLayout}
+                component = {NotFoundPage}
+            />
         </Switch>
     </Router>);
 }

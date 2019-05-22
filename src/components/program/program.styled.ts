@@ -16,6 +16,7 @@ const StyledHeader = styled.div`
       background-color: ${colors.white0};
       button{
         ${gradientMixin};
+        margin: 0;
       }
     }
     title{
@@ -27,7 +28,6 @@ const StyledHeader = styled.div`
       text-align: left;
       padding: 0;
     }
-  
 
 @media ${device.tablet} {
     padding: 20px 50px;
@@ -40,6 +40,9 @@ const StyledHeader = styled.div`
     nav {
         margin-right: 0;
     }
+}
+@media ${device.mobileS} {
+    padding: 10px 30px;
 }
 `;
 

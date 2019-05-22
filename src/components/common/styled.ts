@@ -18,7 +18,12 @@ const Button = styled.button`
   outline: none;
   @media ${device.tablet} {
     padding: 5px 16px;
+    margin: 0;
   }
+  @media ${device.tablet} {
+    padding: 5px 8px;
+  }
+
 `;
 
 const ButtonPrimary = styled(Button)`
@@ -35,15 +40,15 @@ const ButtonSecondary = styled(Button)`
 `;
 
 const LangButton = styled.a`
-  font: inherit;
-  margin-right: 0.5em;
-  cursor: pointer;
-  color: ${colors.grey1};
-  text-transform: uppercase;
-  &.active{
-    color: ${colors.white1};
-    text-decoration: underline;
-  }
+    font: inherit;
+    margin-right: 0.5em;
+    cursor: pointer;
+    color: ${colors.grey1};
+    text-transform: uppercase;
+    &.active{
+        color: ${colors.white1};
+        text-decoration: underline;
+    }
 `;
 export const MainButton = styled(ButtonPrimary)`
     background-color: ${colors.grey0}99;
@@ -53,24 +58,24 @@ export const MainButton = styled(ButtonPrimary)`
     align-items: center;
     margin: 25px 0;
     .play_circle{
-     min-width: 40px;
-     min-height: 40px;
-     width: 40px;
-     height: 40px;
-     ${gradientMixin};
-     border-radius: 50%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-left: -5px;
-     .play_triangle {
-       width: 0;
-       height: 0;
-       border-style: solid;
-       border-width: 10px 0 10px 20px;
-       border-color: transparent transparent transparent ${colors.white0};
-       border-radius: 10%;
-     }
+         min-width: 40px;
+         min-height: 40px;
+         width: 40px;
+         height: 40px;
+         ${gradientMixin};
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-left: -5px;
+        .play_triangle {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 0 10px 20px;
+            border-color: transparent transparent transparent ${colors.white0};
+            border-radius: 10%;
+        }
     }
   .text{
       display: flex;
@@ -94,7 +99,9 @@ const ProgramButton = styled(Button)`
   padding-top: 20px;
   padding-bottom: 20px;
   @media ${device.tablet} {
-    align-self: center;
+      align-self: center;
+      width: 80%;
+      padding: 10px;
   }
 `;
 
@@ -185,7 +192,7 @@ export const StyledSecondSection = styled.section`
     color: ${colors.black1};
     justify-content: flex-start;
     padding: 3rem 0;
-  grid-area: section2;
+    grid-area: section2;
     .wrapper{
       display: flex;
       flex-direction: column;

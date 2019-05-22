@@ -38,6 +38,9 @@ const StyledBenefit = styled.div`
     nav {
         margin-right: 0;
     }
+    .text{
+        padding: 1rem 0;
+    }
 }
 `;
 

@@ -5,6 +5,7 @@ import React from 'react';
 import {useTranslation} from 'react-i18next';
 import ProgramComponent from './program';
 import BenefitComponent from './benefit';
+import Footer from './footer';
 
 
 const Landing = () => {
@@ -59,8 +60,8 @@ const Landing = () => {
                     content={t('benefits.second.content')}
                 />
             </div>
-
         </StyledThirdSection>
+        <Footer />
     </>
 };
 
